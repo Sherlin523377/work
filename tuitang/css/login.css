@@ -1,0 +1,46 @@
+*{margin: 0;padding: 0;}
+#mc{width: 100%;height: 100%;background: rgba(0,0,0,0.2);position: absolute;}
+
+.denglu{width: 660px;height:450px;border: #b0b0b0 1px solid;box-shadow: 0px 2px 8px black;background-color: white;position: absolute;margin: auto;left: 0;right: 0;top: 0;bottom: 0;}
+.val{height: 46px;border-bottom: 1px solid #606060;text-align: center;position: relative;}
+.val span{font-size: 16px;font-weight: 700;color: #606060;line-height: 46px;}
+#close{width:46px;height:46px;position: absolute;top: 0px;right: 0px;background: url(../img/20150617215527_JyACa.png) 15px 15px no-repeat;}
+		
+.cont{padding: 40px 0px 10px 20px;overflow: hidden;}
+.cont-left{float: left;width: 400px;}
+.cont-left-1{margin-top: 30px;padding: 0px 10px 0px 0px;float: left;font-size: 14px;text-align: left;color: #666}
+#user,#pass{height: 50px;color: #666;}
+#user input,#pass input{padding: 9px 8px;width: 170px;height: 16px;line-height: 16px;background: #fff;border: 1px solid #e5e4e3;font-size: 14px;}
+#pass lable{margin-top: 20px;margin-left: 52px;}
+#a{text-decoration: none;color: #5678a0;}
+#a:hover{text-decoration: underline;color: #f14382;}
+		
+#gouxuan{height: 60px;line-height: 60px;font-weight: 400;margin-left: 113px;}
+#gou{margin-top: 24px;margin: 7px 4px 0px 0px;}
+#gouxuan label{margin-right: 16px;}
+.phone,.email{text-decoration: none;float: right;color: #5678a0;}
+.email{display: none;}
+#gouxuan a:hover{cursor: pointer;text-decoration: underline;color: #f14382;}
+
+.dl{margin: 10px 0 20px 110px;text-align: center;width: 220px;height: 40px;background: #f46;border-radius: 6px;overflow: hidden;}
+.dl-1{width: 100%;height: 100%;background: #f46;border: 0;}
+.dl-1 a{text-decoration: none;color: white;font-size: 16px;}
+.dl:hover .dl-1{cursor: pointer;}
+
+.cont-left-2{margin-left: 110px;margin-top:5px;float: left;}
+.QQ,.weibo,.doudou,.taobao,.QQweibo{text-decoration: none;margin-right: 20px;}
+.QQ i,.weibo i,.doudou i,.taobao i,.QQweibo i{background: url(../img/20150115153954_UWNXn.png) -36px -4px;display: inline-block;width: 25px;height: 25px;}
+.weibo i{background-position: -4px -4px;}
+.doudou i{background-position: -67px -4px;}
+.taobao i{background-position: -100px -4px;}
+.QQweibo i{background-position: -131px -4px;}
+
+.cont-right{border-left: 1px #ebebeb solid;float: left;}
+.cont-right-1{width: 200px;height: 314px;padding: 0px 0px 0px 20px;}
+.cont-right-1 img{margin-top: 30px;}
+.cont-right-1 p{font-size: 14px;text-align: center;height: 20px;}
+.p{margin-top: 24px;}
+
+.zhuce{height: 50px;text-align: center;line-height: 40px;font-size: 13px;}
+.zhuce a{text-decoration: none;color: #5678A0;}
+.zhuce a:hover{text-decoration: underline;color: #f14382;}

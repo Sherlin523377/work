@@ -1,0 +1,39 @@
+*{margin: 0;padding: 0;}
+.all{height: 100%;overflow: hidden;}
+.content{width: 100%;background: #fffdf8;margin: 0 auto;padding-bottom: 24px;overflow: hidden;}
+.con-box{height: 100%;position: relative;transform: translate3d(0px,0px,0px);transition-property: all;transition-duration: 700ms;transition-timing-function: ease;transition-delay: 0s;touch-action: none;overflow: hidden;}
+/*第一张图片*/
+.first{height: 475px;background-size: cover;background-position: center;position: relative;/*overflow: hidden;*/display: table;width: 100%;}
+.pit1{background: url(../img/20160818104645_f5QSv.png) no-repeat;}
+.first-pit{height: 475px;vertical-align: middle;width: 100%;display: table-cell;}
+.push{cursor: pointer;position: absolute;width: 40px;bottom: 50px;left: 50%;margin-left: -24px;/*animation: moveDown 1.6s linear infinite;*/}
+/*顶部*/
+.fis-header{position: absolute;top: 0;width: 100%;background: rgba(255,255,255,0.9);height: 64px;font-size: 14px;z-index: 10;}
+.fis-wrp{width: 1200px;margin: 0 auto;}
+.log-pit{float: left;width: 80px;height: 64px;background: url(../img/tuitangtubiao.png) 0 12px no-repeat;text-decoration: none;display: block;}
+.wrp-right a{float: right;margin-left: 25px;margin-right: 25px;font-size: 13px;text-align: center;color: #444;text-decoration: none;background: none;line-height: 64px;}
+.ye-line{float: right;background-color: #EBEBEB;width: 1px;height: 24px;margin-top: 20px;}
+.wrp-right .res{display: block;float: right;text-decoration: none;color: white;width: 52px;height: 28px;vertical-align: middle;text-align: center;background-color: #f46;margin-top: 18px;border-radius: 3px;line-height: 30px;}
+/*图片部分*/
+.fi-text{text-align: center;}
+.fi-text img{text-align: center;height: 44px;border: 0;}
+.text-title{padding-top: 44px;font-size: 45px;font-weight: 400;padding-bottom: 11px;color: #000;}
+.text-bottom{text-align: center;font-size: 26px;font-weight: 300;color: #777;padding-bottom: 50px;}
+.text-lifer{text-align: center;color: #fff;text-decoration: none;width: 220px;height: 60px;border-radius: 100px;font-size: 20px;background: #ff7d7c;cursor: pointer;display: inline-block;}
+.text-lifer div{line-height: 60px;font-size: 20px;}
+.pit-wrap{display: inline-table;width: 50%;padding-right: 353px;position: relative;text-align: center;line-height: 1.5;color: #666666;padding-left: 250px;}
+/*第二张图*/
+.wrap-img{width: 100%;height: 0px;padding-bottom: 67.16%;background: url(../img/20160818104653_VsaUu.png) no-repeat;background-size: 100% 100%;}
+.text-second{position: absolute;top: 45%;right: 0px;margin-top: -151px;text-align: center;}
+.text-line{width: 42px;height: 2px;text-align: center;background: #000000;}
+.te-title{font-size: 24px;font-weight: 500;color: #000;padding: 20px 0 40px;text-align: center;}
+.te-content{text-align: left;font-size: 16px;font-weight: 400;line-height: 2;color: #000000;}
+/*第三张图*/
+.wrap-img1{width: 100%;height: 0px;padding-bottom: 122.68%;background-size: 100% 100%;background: url(../img/20160818104651_nRwPk.png) no-repeat;}
+.pit3{background: url(../img/20160818104618_KtRJn.png) no-repeat;display: table;table-layout: fixed;width: 100%;}
+.right-top{position: fixed;width: 25px;right: 51px;top: 50%;margin-top: 73px;z-index: 20;}
+.right{margin-top: -43.5px;right: 50px;position: fixed;top: 50%;opacity: 1;z-index: 30;display: block;}
+.right ul{list-style: none;}
+.right ul li{display: block;width: 14px;height: 13px;margin: 7px;position: relative;vertical-align: middle;}
+.right ul li a{display: block;position: relative;width: 100%;height: 100%;z-index: 1;cursor: pointer;text-decoration: none;}
+.right ul li a span{background: #d8d8d8;border-radius: 50%;position: absolute;left: 50%;top: 50%;margin: -2px 0 0 -2px;border: 0;width: 4px;height: 4px;transform: all .1s ease-in-out;}
