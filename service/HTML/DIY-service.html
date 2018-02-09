@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/angular.js"></script>
+	</head>
+	<body>
+		<div ng-app="my">
+			<div ng-controller="nn">
+				<p>随机数：{{ran}}</p>
+			</div>
+			
+			<div ng-controller="mm">
+				<button ng-click="ck()">随机数</button>
+				<span>{{num}}</span>
+			</div>
+		
+		
+		</div>
+	</body>
+	<script type="text/javascript">
+		var app=angular.module("my",[])
+		//通过app注入服务
+		app.service("rdon",function(){
+			this.ranNum=function(){
+				return parseInt(Math.random()*100)
+			}
+			//console.log(this)
+		})
+		app.controller("nn",function($scope,rdon){
+			$scope.ran=rdon.ranNum()
+		})
+		app.service("number",function(){
+			this.NumFun=function(){
+				return parseInt(Math.random()*1000)
+			}
+		})
+		app.controller("mm",function($scope,number){
+			$scope.ck=function(){
+				$scope.num=number.NumFun()
+				//console.log(55)
+			}
+		})
+	</script>
+</html>

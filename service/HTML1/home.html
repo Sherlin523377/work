@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			.box{width: 700px;height: 600px;border: #ff0000 solid 1px;margin: 0 auto;}
+			.nav{height: 50px;display: flex;justify-content: space-around;}
+			.nav a{height: 50px;width: 100px;background: blueviolet;text-decoration: none;line-height: 50px;text-align: center;color: #000;}
+			.nav a:hover{background: aquamarine;}
+			.show{height: 550px;background: #999;}
+		</style>
+		<script src="../js/angular.js"></script>
+		<script src="https://cdn.bootcss.com/angular.js/1.4.6/angular-route.min.js"></script>
+	</head>
+	<body>
+		<div ng-app="my" class="box">
+			<div ng-controller="ctr1">
+				<div class="nav">
+					<a href="#/first">第一</a>
+					<a href="#/two">第二</a>
+					<a href="#/three">第三</a>
+					<a href="#/four">第四</a>
+					<a href="#/five">第五</a>
+				</div>
+				<div ng-view class="show"></div>
+			</div>
+		</div>
+	</body>
+	<script>
+		var app=angular.module("my",["ngRoute"]);
+		
+		app.config(["$routeProvider",function($routeProvider){
+			$routeProvider
+			.when("/first",{templateUrl:"first.html"})
+			.when("/two",{templateUrl:"two.html"})
+			.when("/three",{templateUrl:"three.html"})
+			.when("/four",{templateUrl:"four.html"})
+			.when("/five",{templateUrl:"five.html"})
+			.otherwise({redirectTo:"/first"})//路由重定向，出错时，重定向到指定的页面（例如：首页“/”）
+		}])
+		app.controller("ctr1",function(){
+			
+		})
+	</script>
+</html>

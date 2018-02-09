@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/angular.js"></script>
+	</head>
+	<body>
+		<div ng-app="my">
+			<div ng-controller="ctrl">
+				<p>p标签</p>
+			</div>
+			<div ng-controller="time">
+				<p>2秒后显示hello：
+					<span>{{word}}</span>
+				</p>
+				<p>获取实时时间
+					<span>{{time}}</span>
+				</p>
+			</div>
+		</div>
+	</body>
+	<script>
+		var app=angular.module("my",[]);
+		app.controller("ctrl",function($scope,$location,$log){
+			//console.log($log)
+			$log.log("地址："+$location.absUrl())
+			$log.log("端口："+$location.port())
+			$log.log("域名："+$location.host())
+			$log.log("协议："+$location.protocol())
+		})
+		app.controller("time",function($scope,$timeout,$interval){
+			$timeout(function(){
+				$scope.word="word"
+			},2000)
+			$scope.time=new Date().toLocaleTimeString();
+			$interval(function(){
+				$scope.time=new Date().toLocaleTimeString();
+			},1000)
+		})
+	</script>
+</html>

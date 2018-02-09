@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/angular.js"></script>
+		<!--<script src="https://cdn.bootcss.com/angular.js/1.4.6/angular-route.min.js"></script>-->
+	</head>
+	<body>
+		<div ng-app="my">
+			<div ng-controller="pp">
+				<a href="#/home">跳转路由</a>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var app=angular.module("my",[]);
+		app.controller("pp",function($location,$log){
+			$log.log($location)
+			$log.log("url路径："+$location.url())
+			$log.log("哈希值："+$location.hash())
+			$log.log("path值："+$location.path())
+		})
+	</script>
+</html>

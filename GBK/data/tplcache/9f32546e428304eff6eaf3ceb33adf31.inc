@@ -1,0 +1,1 @@
+<img src="/templets/xunmei/images/[field:id/].jpg" width="980" height="175" alt="[field:id/]" />
